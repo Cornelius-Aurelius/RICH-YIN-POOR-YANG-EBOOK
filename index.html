@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rich Yin Poor Yang | Cornelius Aurelius</title>
+    
+    <meta name="description" content="Rich Yin Poor Yang by Cornelius Aurelius: A framework for building a structurally sound life through health, wealth, love, and equilibrium.">
+    <meta name="keywords" content="Cornelius Aurelius, Rich Yin Poor Yang, Personal Equilibrium, Life Architecture, Wealth, Health, Framework Builder">
+    <meta name="author" content="Cornelius Aurelius">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-color: #000000;
+            --text-color: #e0e0e0;
+            --neon-blue: #00f2ff;
+            --surface-color: #121212;
+            --accent-glow: rgba(0, 242, 255, 0.2);
+            --max-width: 700px;
+        }
+
+        /* Base Styles */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', sans-serif;
+            line-height: 1.8;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        /* Readability Settings */
+        body.sepia-mode { --bg-color: #f4ecd8; --text-color: #433422; --surface-color: #e8dfc8; --neon-blue: #a0522d; }
+        body.light-mode { --bg-color: #ffffff; --text-color: #1a1a1a; --surface-color: #f0f0f0; --neon-blue: #0077ff; }
+
+        header {
+            padding: 4rem 1.5rem;
+            text-align: center;
+            border-bottom: 1px solid var(--neon-blue);
+            background: linear-gradient(180deg, var(--bg-color) 0%, var(--surface-color) 100%);
+        }
+
+        h1 {
+            font-weight: 800;
+            letter-spacing: -1px;
+            color: var(--neon-blue);
+            text-transform: uppercase;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 0 0 10px var(--accent-glow);
+        }
+
+        .author-name {
+            font-weight: 300;
+            font-size: 1.1rem;
+            opacity: 0.8;
+            letter-spacing: 2px;
+        }
+
+        /* Layout */
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+
+        /* Controls Panel */
+        .controls {
+            position: sticky;
+            top: 0;
+            background: var(--bg-color);
+            padding: 1rem 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            z-index: 100;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        button.tool-btn {
+            background: var(--surface-color);
+            border: 1px solid var(--neon-blue);
+            color: var(--neon-blue);
+            padding: 8px 15px;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+
+        button.tool-btn:hover {
+            background: var(--neon-blue);
+            color: #000;
+        }
+
+        /* Reading Content */
+        article section { margin-bottom: 4rem; }
+        h2 { color: var(--neon-blue); margin: 2.5rem 0 1rem; border-left: 4px solid var(--neon-blue); padding-left: 1rem; }
+        p { margin-bottom: 1.5rem; font-size: 1.1rem; font-weight: 300; }
+        .quote { font-style: italic; border-left: 2px solid rgba(255,255,255,0.2); padding-left: 1.5rem; margin: 2rem 0; opacity: 0.9; }
+
+        /* Hook Component */
+        .hook-box {
+            background: var(--surface-color);
+            border: 1px dashed var(--neon-blue);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .hook-content { font-size: 0.95rem; margin-bottom: 1rem; color: #fff; }
+
+        /* Social/Action Buttons */
+        .action-row { display: flex; gap: 10px; margin-top: 1rem; flex-wrap: wrap; }
+        .action-btn {
+            background: #1da1f2; /* Twitter Blue */
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 0.8rem;
+        }
+        .copy-btn { background: #333; }
+
+        /* Notes Panel */
+        #notes-panel {
+            background: var(--surface-color);
+            padding: 2rem;
+            margin: 4rem 0;
+            border-radius: 12px;
+            border: 1px solid var(--neon-blue);
+        }
+
+        textarea#user-notes {
+            width: 100%;
+            height: 150px;
+            background: #000;
+            color: #fff;
+            border: 1px solid #333;
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+            resize: vertical;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 4rem 1.5rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.9rem;
+            background: var(--surface-color);
+        }
+
+        .footer-links { margin-bottom: 2rem; }
+        .footer-links a { 
+            color: var(--neon-blue); 
+            text-decoration: none; 
+            margin: 0 10px; 
+            display: inline-block;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 1.8rem; }
+            .container { padding: 1.5rem 1rem; }
+            p { font-size: 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Rich Yin Poor Yang</h1>
+        <div class="author-name">Cornelius Aurelius</div>
+    </header>
+
+    <div class="controls">
+        <button class="tool-btn" onclick="setTheme('dark')">Dark</button>
+        <button class="tool-btn" onclick="setTheme('sepia')">Sepia</button>
+        <button class="tool-btn" onclick="setTheme('light')">Light</button>
+    </div>
+
+    <main class="container">
+        <article>
+            <section>
+                <h2>Introduction</h2>
+                <p>Most people do not realise they are living in imbalance until the consequences become too obvious to ignore[cite: 27]. From the outside, life can look functional. Work is being done. Money is being made[cite: 28, 29]. But underneath that surface, something often feels unstable. Energy becomes inconsistent. Clarity comes and goes[cite: 30].</p>
+                
+                <div class="hook-box">
+                    <div class="hook-content" id="hook1">"A strong life is not built by force alone. It is built by force that is properly organised."</div>
+                    <div class="action-row">
+                        <button class="action-btn copy-btn" onclick="copyHook('hook1')">Copy Text</button>
+                        <a href="https://twitter.com/intent/tweet?text=A%20strong%20life%20is%20not%20built%20by%20force%20alone.%20It%20is%20built%20by%20force%20that%20is%20properly%20organised.%20%E2%80%94%20Cornelius%20Aurelius" target="_blank" class="action-btn">Share to X</a>
+                    </div>
+                </div>
+
+                <p>Poor Yang is force without structure. It pushes, reacts, accelerates, and strains[cite: 42]. Rich Yin is different. It is structure that allows force to become effective[cite: 44]. It is inner order that gives outer effort direction, stability, and staying power[cite: 45].</p>
+            </section>
+
+            <section>
+                <h2>Health: The First Asset</h2>
+                <p>Health is the condition through which life is lived. It shapes the quality of your energy, influences the steadiness of your attention, and affects your resilience under pressure[cite: 815, 816].</p>
+                <p>Poor Yang treats the body like a machine to extract from, mistaking endurance for strength[cite: 824, 826]. Rich Yin understands that the body is involved in every decision, judgment, and relationship[cite: 827, 831].</p>
+                
+                <div class="hook-box">
+                    <div class="hook-content" id="hook2">"Health is not the reward at the end of a strong life. It is infrastructure. Build the foundation before you add the weight."</div>
+                    <div class="action-row">
+                        <button class="action-btn copy-btn" onclick="copyHook('hook2')">Copy Text</button>
+                        <a href="https://twitter.com/intent/tweet?text=Health%20is%20not%20the%20reward%20at%20the%20end%20of%20a%20strong%20life.%20It%20is%20infrastructure.%20%E2%80%94%20Cornelius%20Aurelius" target="_blank" class="action-btn">Share to X</a>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Wealth: Assets That Breathe</h2>
+                <p>Income is what comes in. Wealth is what remains, protects, compounds, and keeps serving you after the hour has ended[cite: 939]. A person can earn well and still remain financially exposed if the model depends on constant direct output[cite: 941].</p>
+                <p>Real assets include systems, frameworks, and digital tools that create leverage—multiplying the effect of your work beyond the immediate hour[cite: 958, 976].</p>
+            </section>
+
+            <div id="notes-panel">
+                <h3>Private Reading Notes</h3>
+                <p style="font-size: 0.85rem; opacity: 0.7;">Your notes are stored locally in your browser. They are not saved to any server.</p>
+                <textarea id="user-notes" placeholder="Reflect on your internal architecture here..."></textarea>
+                <div class="action-row">
+                    <button class="tool-btn" onclick="saveNotes()">Save Note</button>
+                    <button class="tool-btn" onclick="emailNotes()">Email Notes to Myself</button>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="https://cornelius-aurelius.github.io/CORNELIUS-AURELIUS-EBOOKS/">Ebook Hub</a>
+            <a href="https://CORNELIUSAURELIUS.COM">Official Website</a>
+            <a href="https://buy.stripe.com/28E00jbRIfz8aLI7TGco000">Tip Cornelius</a>
+        </div>
+        <p>&copy; <span id="year"></span> Cornelius Aurelius. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Set Current Year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Theme Switcher
+        function setTheme(theme) {
+            document.body.classList.remove('sepia-mode', 'light-mode');
+            if (theme === 'sepia') document.body.classList.add('sepia-mode');
+            if (theme === 'light') document.body.classList.add('light-mode');
+        }
+
+        // Copy Hook to Clipboard
+        function copyHook(id) {
+            const text = document.getElementById(id).innerText;
+            navigator.clipboard.writeText(text).then(() => {
+                alert('Caption copied to clipboard.');
+            });
+        }
+
+        // Notes Management
+        const notesArea = document.getElementById('user-notes');
+        
+        // Load saved notes
+        window.onload = () => {
+            const saved = localStorage.getItem('rypy_notes');
+            if (saved) notesArea.value = saved;
+        };
+
+        function saveNotes() {
+            localStorage.setItem('rypy_notes', notesArea.value);
+            alert('Notes saved to browser storage.');
+        }
+
+        function emailNotes() {
+            const notes = encodeURIComponent(notesArea.value);
+            const subject = encodeURIComponent("My Reading Notes: Rich Yin Poor Yang");
+            window.location.href = `mailto:?subject=${subject}&body=${notes}`;
+        }
+    </script>
+</body>
+</html>
